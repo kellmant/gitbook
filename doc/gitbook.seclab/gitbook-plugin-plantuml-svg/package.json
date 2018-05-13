@@ -1,0 +1,169 @@
+{
+  "_args": [
+    [
+      {
+        "name": "gitbook-plugin-plantuml-svg",
+        "raw": "gitbook-plugin-plantuml-svg@1.0.1",
+        "rawSpec": "1.0.1",
+        "scope": null,
+        "spec": "1.0.1",
+        "type": "version"
+      },
+      "/doc/gitbook.seclab"
+    ]
+  ],
+  "_from": "gitbook-plugin-plantuml-svg@1.0.1",
+  "_id": "gitbook-plugin-plantuml-svg@1.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/gitbook-plugin-plantuml-svg",
+  "_nodeVersion": "8.0.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/gitbook-plugin-plantuml-svg-1.0.1.tgz_1512315498286_0.16924066841602325"
+  },
+  "_npmUser": {
+    "email": "lyweiwei@outlook.com",
+    "name": "wewei"
+  },
+  "_npmVersion": "5.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "gitbook-plugin-plantuml-svg",
+    "raw": "gitbook-plugin-plantuml-svg@1.0.1",
+    "rawSpec": "1.0.1",
+    "scope": null,
+    "spec": "1.0.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/gitbook-plugin-plantuml-svg/-/gitbook-plugin-plantuml-svg-1.0.1.tgz",
+  "_shasum": "e107e8482a7f1aede3d3f217ce4d42fc159ee909",
+  "_shrinkwrap": null,
+  "_spec": "gitbook-plugin-plantuml-svg@1.0.1",
+  "_where": "/doc/gitbook.seclab",
+  "author": {
+    "email": "shazhouke@gmail.com",
+    "name": "Wei Wei",
+    "url": "https://github.com/wewei"
+  },
+  "bugs": {
+    "url": "https://github.com/wewei/gitbook-plugin-plantuml-svg/issues"
+  },
+  "dependencies": {
+    "js-base64": "^2.4.0",
+    "lodash": "^4.17.4",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "description": "Inject PlantUML into gitbook as SVG",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "coveralls": "^2.13.1",
+    "eslint": "^4.1.0",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-config-xo": "^0.18.2",
+    "eslint-plugin-prettier": "^2.2.0",
+    "fs-extra": "^4.0.2",
+    "husky": "^0.14.3",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0",
+    "lint-staged": "^4.2.1",
+    "npx": "^9.7.1",
+    "nsp": "^2.6.3",
+    "prettier": "^1.7.0",
+    "sinon": "^4.1.2",
+    "sinon-chai": "^2.14.0"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-YP3nmYI+6j2aUPk3hKkWkggIlORgGwLhvaoReZvdyVM5cvomyd9iq4leRMvxBUSwuD6I1fXyYLMGqunOIjkXbw==",
+    "shasum": "e107e8482a7f1aede3d3f217ce4d42fc159ee909",
+    "tarball": "https://registry.npmjs.org/gitbook-plugin-plantuml-svg/-/gitbook-plugin-plantuml-svg-1.0.1.tgz"
+  },
+  "engines": {
+    "gitbook": ">=2.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "new-cap": [
+        "error",
+        {
+          "capIsNewExceptionPattern": "[A-Z]+(_[A-Z]+)*"
+        }
+      ],
+      "prettier/prettier": [
+        "error",
+        {
+          "printWidth": 90,
+          "singleQuote": true,
+          "trailingComma": "es5"
+        }
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "gitHead": "03a8ada04ccfc0ee30297c35f65798afbf732011",
+  "homepage": "https://github.com/wewei/gitbook-plugin-plantuml-svg",
+  "jest": {
+    "collectCoverage": true,
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "GitBook",
+    "PlantUML",
+    "SVG",
+    "GitBook plugin",
+    "UML",
+    "Markdown"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "dist/index.js",
+  "maintainers": [
+    {
+      "email": "lyweiwei@outlook.com",
+      "name": "wewei"
+    }
+  ],
+  "name": "gitbook-plugin-plantuml-svg",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wewei/gitbook-plugin-plantuml-svg.git"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "prepublish": "nsp check; npx babel src --out-dir dist",
+    "pretest": "eslint .",
+    "test": "jest"
+  },
+  "version": "1.0.1"
+}

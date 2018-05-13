@@ -1,0 +1,10 @@
+{
+    "title": "Securing Labs GitBook",
+    "author": "kellman",
+    "plugins": ["theme-api", "plantuml-svg", "alerts", "html5-video", "rest"],
+    "pluginsConfig": {
+        "theme-api": {
+            "theme": "dark"
+        }
+    }
+}

@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      {
+        "name": "gitbook-plugin-rest",
+        "raw": "gitbook-plugin-rest@1.1.1",
+        "rawSpec": "1.1.1",
+        "scope": null,
+        "spec": "1.1.1",
+        "type": "version"
+      },
+      "/doc/gitbook.seclab"
+    ]
+  ],
+  "_from": "gitbook-plugin-rest@1.1.1",
+  "_id": "gitbook-plugin-rest@1.1.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/gitbook-plugin-rest",
+  "_nodeVersion": "6.11.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/gitbook-plugin-rest_1.1.1_1522159564640_0.396878902394874"
+  },
+  "_npmUser": {
+    "email": "emanuel-pilz@web.de",
+    "name": "emonadeo"
+  },
+  "_npmVersion": "5.8.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "gitbook-plugin-rest",
+    "raw": "gitbook-plugin-rest@1.1.1",
+    "rawSpec": "1.1.1",
+    "scope": null,
+    "spec": "1.1.1",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/gitbook-plugin-rest/-/gitbook-plugin-rest-1.1.1.tgz",
+  "_shasum": "d9110729fcd7dac6eb0f923a19c545ee90de442e",
+  "_shrinkwrap": null,
+  "_spec": "gitbook-plugin-rest@1.1.1",
+  "_where": "/doc/gitbook.seclab",
+  "author": {
+    "name": "Emonadeo"
+  },
+  "bugs": {
+    "url": "https://github.com/Emonadeo/gitbook-rest/issues"
+  },
+  "dependencies": {},
+  "description": "REST Code Blocks for GitBook",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "fileCount": 5,
+    "integrity": "sha512-B9+v2xyn0g1F94JivT6KvV6aI1Gy5HhlslMnDBLuJNFsYNWdMGDME1WGTJ/D6q9MiVRnLV1rh2DSYmjl1nM6rg==",
+    "shasum": "d9110729fcd7dac6eb0f923a19c545ee90de442e",
+    "tarball": "https://registry.npmjs.org/gitbook-plugin-rest/-/gitbook-plugin-rest-1.1.1.tgz",
+    "unpackedSize": 4711
+  },
+  "engines": {
+    "gitbook": ">1.x.x"
+  },
+  "gitHead": "1fdfaf76c0711c5bd045e648b769fcea964e3e49",
+  "gitbook": {
+    "properties": {
+      "rtl": {
+        "default": "true",
+        "description": "Aligns the description to the right instead of left",
+        "type": "boolean"
+      }
+    }
+  },
+  "homepage": "https://github.com/Emonadeo/gitbook-rest#readme",
+  "keywords": [
+    "gitbook-rest",
+    "rest",
+    "crud",
+    "http"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "emanuel-pilz@web.de",
+      "name": "emonadeo"
+    }
+  ],
+  "name": "gitbook-plugin-rest",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emonadeo/gitbook-rest.git"
+  },
+  "version": "1.1.1"
+}

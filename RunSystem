@@ -1,0 +1,7 @@
+#!/bin/bash
+cd /Users/kellman/docker/gitbook
+
+
+docker run --rm -h gitbook --name gitbook -v $PWD/doc:/doc -p 4000:4000 -it gitbook:latest
+
+

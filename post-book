@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+cd ~
+
+if [ -z ${1} ] ; then
+	echo
+	ls | grep *.seclab
+	echo
+	exit 0
+fi
+
+if [ ! -d ~/${1} ] ; then
+	echo "No gitbook named ${1} "
+	exit 1
+fi
+
+cd ~/${1}/_book || { exit 1 ; }
+
+aws s3 sync --acl public-read . s3://${1}.help --delete
+
+
+
