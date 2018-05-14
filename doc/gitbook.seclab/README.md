@@ -11,7 +11,7 @@ Default book.json:
 {
     "title": "SecLab Gitbook Help",
     "author": "kellman",
-    "plugins": ["theme-api", "plantuml-svg", "alerts", "html5-video", "rest"],
+    "plugins": ["theme-api", "plantuml-svg", "alerts", "html5-video", "rest", "include-html"],
     "pluginsConfig": {
         "theme-api": {
             "theme": "dark"
