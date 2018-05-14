@@ -1,7 +1,7 @@
 FROM debian:latest
 MAINTAINER Kellman
 USER root
-RUN apt-get update && \
+RUN apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove -y && \
     apt-get install -y --no-install-recommends locales bash-completion jq curl vim \
     tmux gnupg2 ca-certificates && \
     update-ca-certificates && \
@@ -15,7 +15,7 @@ RUN mkdir -p /doc && useradd -d /doc -s /bin/bash -u 501 doc && \
 RUN apt-get update && \
     apt-get install -y --no-install-recommends procps curl wget git build-essential \
     software-properties-common chrpath libssl-dev libxft-dev bzip2 openssh-client \
-    python-pip python-setuptools python-dev && \
+    python-pip python-setuptools python python-dev && \
 #    pip install --upgrade pip && \
     pip install --upgrade virtualenv && \
     pip install awscli && \
@@ -23,8 +23,8 @@ RUN apt-get update && \
     curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     apt-get install -y nodejs && \
     mkdir -p /usr/lib/node_modules && ln -s /usr/lib/node_modules /usr/local/lib && \
-    ln -s /usr/bin/nodejs /usr/local/bin/node && \
-    npm i -g npm
+    ln -s /usr/bin/nodejs /usr/local/bin/node
+#    npm i -g npm
 ## Install OpenJDK
 RUN apt-get update && \
     apt-get install -y --no-install-recommends openjdk-8-jre-headless && \
@@ -43,7 +43,8 @@ EXPOSE 4000
 VOLUME ["/doc"]
 USER doc
 ENV NPM_CONFIG_PREFIX=/node
-RUN npm install -g phantomjs@2.1.1 --upgrade --unsafe-perm && \
+RUN npm install -g npm && \
+    npm install -g phantomjs@2.1.1 --upgrade --unsafe-perm && \
     npm install -g node-plantuml && \
     npm install -g generate-schema && \
     npm install -g svgexport && \
